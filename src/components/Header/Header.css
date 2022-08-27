@@ -1,0 +1,88 @@
+.Header {
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s ease-out;
+}
+.slider {
+  height: 80%;
+}
+.slider .slick-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shop-btn {
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-weight: 600;
+  padding: 12px 30px;
+  transition: all ease 0.3s;
+  font-size: 14px;
+}
+.shop-btn:hover {
+  border: 2px solid transparent;
+  background-color: white;
+  color: black;
+}
+.Header:first-child > div {
+  width: 95%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.Header .logo img {
+  width: 115px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.addSlideItem{
+    display: none !important;
+}
+
+.slick-prev {
+  display: none !important;
+}
+.slick-next {
+  display: none !important;
+}
+
+.Header .menu {
+  width: 80%;
+}
+
+.menu ul li {
+  margin: 15px 10px;
+}
+
+.menu ul li a {
+  font-size: 15px;
+  color: white;
+}
+
+.menu ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+}
+
+.menu ul li:last-child a .userImage {
+  width: 35px;
+  height: 35px;
+  margin-bottom: -5px;
+  border-radius: 50%;
+}
